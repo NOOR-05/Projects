@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"  rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+       :root {
+  --primary-color: #42200b;
+  --secondary-color: #ffc135;
+  --tertiary-color: #df1c1c;
+  --text-dark: #212529;
+  --white: #ffffff;
+  --max-width: 1100px;
+  --header-font-1: "Alfa Slab One", serif;
+  --header-font-2: "Bebas Neue", sans-serif;
+} 
+
+body{
+           
+  background-image: linear-gradient(rgba(0,0,0, 0.45),rgba(0,0,0, 0.45)),url(smoothi.jpeg);
+           background-size:cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed; 
+       }
+
+      .section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+.section__header {
+  font-size: 3rem;
+  font-weight: 500;
+  
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 3.75rem;
+  text-shadow: 2px 2px var(--secondary-color);
+}
+
+.reservation {
+  position: relative;
+  isolation: isolate;
+}
+
+.reservation__container h3 {
+  margin-top: -2rem;;
+  font-size: 2rem;
+  font-weight: 500;
+  
+  color: burlywood;
+  text-align: center;
+}
+
+.reservation__container form {
+  max-width: 350px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.reservation__container input {
+  padding: 0.75rem 1rem;
+  background-color: seashell;
+  border: 1px solid var(--text-dark);
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  outline: auto;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(114, 180, 234);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(53, 148, 225);
+}
+
+
+    </style>    
+
+</head>
+<body>
+  <section class="reservation" id="contact">
+    <div class="section__container reservation__container">
+        <h3><i>RESERVATION</h3>
+        <h2 class="section__header">BOOK YOUR TABLE </h2></i>
+        <form action="#">
+          <input type="text" placeholder="NAME" />
+          <input type="email" placeholder="EMAIL" />
+          <input type="date" placeholder="DATE" />
+          <input type="time" placeholder="TIME" />
+          <input type="number" placeholder="PEOPLE" />
+          <button class="btn" type="submit">BOOK TABLE</button>
+        </form>
+      </div>
+    </section>
+</body>
+</html>

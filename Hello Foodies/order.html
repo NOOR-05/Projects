@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <style>
+        :root {
+  --primary-color: #42200b;
+  --secondary-color: #ffc135;
+  --tertiary-color: #df1c1c;
+  --text-dark: #212529;
+  --white: #ffffff;
+  --max-width: 1300px;
+  --header-font-1: "Alfa Slab One", serif;
+  --header-font-2: "Bebas Neue", sans-serif;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 4rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--header-font-1);
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 3.75rem;
+  text-shadow: 2px 2px var(--secondary-color);
+}
+
+.section__description {
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.75rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--tertiary-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+
+.order__container h3 {
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--header-font-2);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.order__container .section__header {
+  margin-bottom: 1rem;
+}
+
+.order__container .section__description {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.order__grid {
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.order__card {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.order__card:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.order__card img {
+  max-width: 250px;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.3));
+}
+
+.order__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.order__card p {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.75rem;
+}
+@media (width > 768px) {
+  
+  .order__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width > 1024px) {
+  .order__grid {
+    gap: 2rem;
+  }
+}
+
+img{
+    height:350px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="#">
+    <section class="section__container order__container" id="menu">
+        <h3>ALWAYS TASTEY FOODS</h3>
+        <h2 class="section__header">CHOOSE & ENJOY</h2>
+        <p class="section__description">
+          Whether you crave classic flavors or daring combinations, this is where
+          your culinary journey begins. Indulge your cravings and savor every bite
+          as you create your personalized food experience with FOODIES HEAVEN Company.
+        </p>
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="chicken.jpeg" alt="order" />
+            <h4>BBQ Chicken</h4>
+            <p>
+              Sink your teeth into the timeless perfection of our BBQ Chicken ,
+              an experience that never goes out of style.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="cake.jpg" alt="order" />
+            <h4>Chocolate Cake</h4>
+            <p>
+              A decadent slice of chocolate cake: moist, rich, and utterly irresistible.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="foods.jpg" alt="order" />
+            <h4>BBQ Bacon Burger</h4>
+            <p>
+              Indulge in a symphony of smoky, savory flavors with our BBQ Bacon
+              Burger, grilled and topped with crispy bacon.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="smoothi red.jpg" alt="order" />
+            <h4>Smoothi</h4>
+            <p>
+              Vibrant concoctions of blended fruits, vegetables, and yogurt, bursting with flavor and nutrients in a single sip.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          
+          <div class="order__card">
+            <img src="noodles.jpeg" alt="order" />
+            <h4>BBQ Noodles</h4>
+            <p>
+              Long strands of dough, boiled to perfection, embracing savory flavors in a slurp.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="chocolate.jpg" alt="order" />
+            <h4>Chocolate Shake</h4>
+            <p>
+              A decadent slice of chocolate shake: moist, rich, and utterly irresistible.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="pasta.jpeg" alt="order" />
+            <h4>Pasta</h4>
+            <p>
+              Pasta: versatile noodles made from flour and water, enjoyed in countless shapes and sauces across culinary traditions worldwide.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="cupcake.jpg" alt="order" />
+            <h4>Cup Cake</h4>
+            <p>
+              A cupcake: a mini, frosted delight in a paper cup, perfect for sweet cravings and celebrations alike.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="pizza.jpg" alt="order" />
+            <h4>Pizza</h4>
+            <p>
+              Pizza: a savory delight of dough, sauce, cheese, and toppings, baked to perfection and enjoyed worldwide.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+    </form>
+</body>
+</html>

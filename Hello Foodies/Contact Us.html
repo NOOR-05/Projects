@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        body{
+            background-image: url(cups4.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        span{
+            color: rgb(235, 74, 127);
+        }
+        .container{
+            border:3px solid;
+            border-color: aliceblue;
+            width:400px;
+            height: 500px;
+            background:pink;
+            margin-top: 5%;
+        }
+        .container form {
+  max-width: 350px;
+  margin-inline: auto;
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.container form select{
+    width:190px;
+    height:30px
+}
+.container form textarea{
+    width:300px;
+    height:100px;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  outline: auto;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(114, 180, 234);
+  transition: 0.3s;
+  cursor: pointer;
+}
+     
+.button a{
+            text-decoration: none;
+            display:inline-block;
+            color: rgb(228, 78, 140);
+            font-size: 22px;
+            border: 3px solid  rgba(22, 11, 108, 0.45);
+            padding: 5px 30px;
+            background-color: antiquewhite;
+            margin-top:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>              
+        <div class="container">
+            <form action="#">
+                <span><i><h1><u> Contact Us</u></h1>
+           User Name :<br>
+                    <input type="text"  name="firstname" ><br><br>
+                    Mobile No :<br>
+                    <input type="tel" name="number"> <br>   <br>         
+                    Country :<br>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>  <br>   <br>       
+                    Message : <br><br>
+                <textarea  name="subject" placeholder="        ... Write something ..." ></textarea>
+                    <br><br>
+                    <button class="btn" type="submit">Submit</button>
+                    
+                </i>
+            </span>
+               
+            </form>  
+        </div>
+        <div class="button"><a href="webpage.html">Home</a></div>
+</body>
+</html>
