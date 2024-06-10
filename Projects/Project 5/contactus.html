@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <style>
+        h1{            
+            color: rgb(87, 211, 203);
+        }
+        body{            
+            background-image: url(shades.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .button{
+            text-decoration: none;
+            display:inline-block;
+            color: rgb(35, 93, 156);
+            background-color: rgb(87, 211, 203);
+            font-size: 15px;
+            border: 2px solid  rgba(22, 11, 108, 0.45);
+            padding: 5px 25px;  
+            border-radius: 50px;          
+            margin-top:8px;
+
+        }
+
+        .container{
+            border:3px solid;
+            width:300px;
+            height: 400px;
+            background: transparent;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body> 
+    <center>              
+    <div class="container">
+        <form action="success.html">
+        <i><h1><u> Contact Us</u></h1>
+                First Name :<br>
+                <input type="text"  name="firstname" ><br><br>
+                Last Name :<br>
+                <input type="text" name="lastname"> <br>   <br>         
+                Country :<br>
+                <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>  <br>   <br>       
+                Subject :<br>
+                <textarea  name="subject" placeholder="Write something.."></textarea>
+                <br><br>
+                <input type="submit" class="button" value="Submit">
+            </i>
+           
+        </form>  
+    </div>
+</center> 
+</body>
+</html>

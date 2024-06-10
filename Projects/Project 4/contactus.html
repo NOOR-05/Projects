@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <style>
+        h1{            
+            color: rgb(155, 78, 110);
+        }
+       
+         /*  Smart phone      */
+                  
+         @media screen and (min-width:320px )  {
+            body {
+                     background-color: rgb(57, 165, 187);
+            }
+        }
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(158, 227, 189);
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: pink;
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(222, 96, 226);
+}
+}
+    </style>
+</head>
+<body> 
+    <form action="#">
+    <center>        
+        <i><h1><u> Contact Us</u></h1>
+        <div class="container">
+            <form action="">            
+                First Name :<br>
+                <input type="text"  name="firstname" ><br><br>
+                Last Name :<br>
+                <input type="text" name="lastname"> <br>   <br>         
+                Country :<br>
+                <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>  <br>   <br>       
+                Subject :<br>
+                <textarea  name="subject" placeholder="Write something.."></textarea>
+                <br><br>
+                <input type="submit" value="Submit">
+            </i>
+            </form>
+        </div>
+    </center> 
+    </form>  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        h1{            
+            color: white;
+        } 
+        body{
+            background-image: url(shades.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        @media screen and (min-width:320px )  {
+            body {
+                 background-color: rgb(57, 165, 187);
+            }
+        }
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(158, 227, 189);
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: pink;
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(222, 96, 226);
+}
+}
+    </style>
+</head>
+<body>
+    <center>
+        <h1> <u> Login Page </u></h1>
+        <form action="Registration.html">
+            User Name : <input type="text" name="uname"><br><br>
+            Passward : <input type="password" name="pwd"><br><br>
+            <input type="submit"> 
+        </form>
+    </center>
+</body>
+</html>

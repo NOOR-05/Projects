@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Page </title>
+    
+    <style>
+        h1{            
+            color: rgb(155, 78, 110);
+        }
+        body{            
+            background-image: url(star.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        span{
+            color:rgb(227, 10, 94)
+        }
+
+        .button{
+            text-decoration: none;
+            display:inline-block;
+            color: rgb(35, 93, 156);
+            background-color: rgba(244, 237, 237, 0.644);
+            font-size: 15px;
+            border: 2px solid  rgba(22, 11, 108, 0.45);
+            padding: 4px 20px;            
+            margin-top:8px;
+
+        }
+        
+    </style>
+    <script>
+        function validation() {
+            if (isEmpty(document.getElementById("data_2").value.trim())) {
+                alert('First name is required!');
+                return false;
+            }
+            if (isEmpty(document.getElementById("data_3").value.trim())) {
+                alert('Last name is required!');
+                return false;
+            }
+            return true;
+            }
+            function isEmpty(str) {
+                 return (str.length === 0 || !str.trim()); 
+            }
+
+    </script>
+
+
+</head>
+<body>  
+    
+    <form method="post" action="contactus.html" onSubmit="return validation()">      
+        <h1> <u>Registration Form </u></h1>                         
+        <span> First Name : *<br><input type="text" name="data_2" id="data_2" class="form-control">  <br>     
+            Last Name : *<br><input type="text" name="data_3" id="data_3">   <br> <br>           
+            Gender : *</span><br><p1><input type="radio">Male <br>
+                     <input type="radio">Female  </p1> <br>  <br>               
+           <span> Date of Birth : * </span><input type="date"> <br> <br>                  
+            <span>Branch : </span><br><input type="radio">AIDS <br>
+                     <input type="radio">AIML <br>
+                    <input type="radio">CSE <br>
+                    <input type="radio">CSIT <br>
+                    <input type="radio">IOT <br>    <br>                     
+               
+            <span>Course : *</span><br><input type="checkbox">MERN <br>
+                    <input type="checkbox">PYTHON <br>
+                    <input type="checkbox">JAVA<br>
+                    <input type="checkbox">CSBT <br>  <br>          
+                    <button type="submit" class="button">Register</button>   
+            <button class="button"><a href="Website.html">Home</a></button>
+        
+    </form>    
+    </body>
+    </html>
